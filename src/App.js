@@ -9,11 +9,11 @@ import { createContext } from 'react';
 export const SearchContext = createContext();
 
 function App() {
-  const [searchValue, setsearchValue] = useState('');
+  const [searchValue, setSearchValue] = useState('');
 
   return (
     <div className="wrapper">
-      <SearchContext.Provider value={{ searchValue, setsearchValue }}>
+      <SearchContext.Provider value={{ searchValue, setSearchValue }}>
         <Header />
         <div className="content">
           <Routes>
